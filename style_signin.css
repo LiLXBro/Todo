@@ -1,0 +1,81 @@
+body {
+    background-color:#7158e2;
+    display: grid;
+    /* grid-template-areas:"nav nav nav"
+                        ". box ." 
+                        ". box ."
+                        ". . ."; */
+    grid-template-rows: [nav]40px;
+}
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    grid-area: box;
+    /* width: 55vw;
+    height: 85vh; */
+    position: relative;
+    left: 8vw;
+}
+.box{
+    grid-area: box;
+    display: grid;
+    grid-template-rows: [Dp] 35vh [cred] 80px [button]50px;
+    box-shadow: 1px 3px 8px 2px ;
+    background-color: #B19CD9;
+    height: 65vh;
+    width: 25vw;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+#signinDP{
+    /* grid-area: Dp; */
+    display: flex;
+    justify-content: center;
+
+}
+#button{
+    grid-area:button;
+    justify-items: center;
+
+}
+button{
+    background-color: rgb(150, 34, 217); 
+    border-radius: 25px; 
+    height: 5vh; 
+    width: 21vw;
+    border: 1px;
+    box-shadow: 1px 1px 4px 0.5px ;
+    font-weight: bold;
+    font-family: Josefin Sans;
+}
+ img{
+    height: 20vh;
+    grid-area: Dp;
+
+ }
+
+.credential{
+    grid-row: cred;
+    font-family: Josefin Sans;
+    font-weight: bold;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input_border{
+    display: block;
+    border-radius: 9px;
+    border: 1px;
+    height: 35px;
+    width: 21vw;
+}
+input{
+    text-align: center;
+}
+#username{
+    /* background-color: red; */
+    /* margin-top: 25px; */
+    margin-bottom: 10px;
+}

@@ -1,0 +1,112 @@
+body{
+    background-color: #a267ac;
+    height: 90vh;
+    width: 99.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+                'title'
+                'input'
+                'addbutton'
+                'todo';
+    grid-template-columns: minmax(36vw, 37.8vw);
+    grid-template-rows: minmax(7vh, 8vh) minmax(6vh, 7vh) minmax(6vh, 7vh) minmax(10vh, 14vh);
+    background-color: #ce7bb0;
+    width: 38vw;
+    height: 60vh;
+    border-radius: 30px;
+    box-shadow: 1px 1px 7px 0.5px #2e272e;
+}
+
+#title{
+    font-size: 38px;
+    grid-area: title;
+    margin: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6867ac;
+    display: inline;
+    align-self: center;
+}
+#input{
+    width: 34vw;
+    height: 5vh;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #ffbcd1;
+    padding: 4px;
+    grid-area: input;
+    display: block;
+    align-self: center;
+    justify-self: center;
+}
+#addtodo{
+    grid-area: addbutton;
+    padding: 0;
+    border-radius: 15px;
+    height: 5vh;
+    border: 0px;
+    width: 34.3vw;
+    align-self: center;
+    justify-self: center;
+    background-color: #e6d9a2;
+}
+
+#todolistcontainer{
+    grid-area: todo;
+    margin: 20px;
+    width: 34vw;
+    height: 6vh;
+    background-color: #6a2cdd;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    border-radius: 15px;
+}
+.todobox{
+    display: grid;
+    grid-template-areas: 
+                'taskname done delete';
+
+    grid-template-columns: minmax(auto,auto) 0.27fr 0.8fr;
+    gap: 0.5vw;
+    grid-template-rows: 6vh;
+}
+.done{
+    grid-area: done;
+    border-radius: 15px;
+    height: 18px;
+    border: 0px;
+    font-size: 12px;
+    background-color: #f9f9f900;
+    display: inline;
+    align-self: center;
+}
+.delete{
+    grid-area: delete;
+    background-color: #f9f9f900;
+    border-radius: 15px;
+    height:18px;
+    border: 0;
+    font-size: 12px;
+    align-self: center;
+    width: 3vw;
+}
+.task_name{
+    grid-area: taskname;
+    padding: 10px;
+    justify-self: center;
+    width:25vw;
+    align-self: center;
+}
+#doneicon{
+    height: 18px;
+    width:18px
+}
+#deleteicon{
+    height: 18px;
+    width: 18px;
+}
